@@ -152,7 +152,7 @@ i.menu-mobile {
 
 @media (max-width: 1024px) {
     #header {
-        left: -400px;
+        left: -300px;
     }
     i.menu-mobile {
         display: flex;
