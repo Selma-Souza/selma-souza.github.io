@@ -498,13 +498,14 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+        <ul id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
             <i class="bi bi-check-circle-fill"></i> Mensagem enviada com sucesso!
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+        </ul>
         {% endfor %}
         {% endif %}
         {% endwith %}
+        {% block body %}{% endblock %}
     </main>
 
     <footer id="footer">
