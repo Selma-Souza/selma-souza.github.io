@@ -495,13 +495,11 @@
         </section>
 
         <!-- Tira a mensagem de sucesso depois de 5 segundos -->
-                <ul id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
-                {% for message in messages %}  
-                    <li class="bi bi-check-circle-fill">            
-                    </li> Mensagem enviada com sucesso!
-                {% endfor %}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </ul>        
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">                 
+            <i class="bi bi-check-circle-fill">     
+            </i> Mensagem enviada com sucesso!                
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>        
             
     </main>
 
