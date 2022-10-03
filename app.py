@@ -52,7 +52,7 @@ def send():
         )
         mail.send(msg)
         flash('Mensagem enviada com sucesso!')
-    return redirect("/")
+    return redirect("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
